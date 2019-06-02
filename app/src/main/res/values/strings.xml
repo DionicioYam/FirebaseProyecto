@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Firebase Auth</string>
+    <string name="action_sign_in_short">Registro</string>
+    <string name="email">Correo Electronico</string>
+    <string name="minimum_password">Contraseña cortta, introduzca minimo 6 caracteres!</string>
+    <string name="auth_failed">Fallo de autenticacion, cheque su email y contraseña o inicie sesion</string>
+    <string name="change_email">cambiar email</string>
+    <string name="change_password">cambiar contraseña </string>
+    <string name="send_password_reset_email">enviar contraseña restablecer correo electronico</string>
+    <string name="remove_user">Eliminar usuario</string>
+    <string name="new_pass">Nueva contraseña</string>
+    <string name="title_activity_profile">Firebase</string>
+    <string name="title_activity_login">Registrarse</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Nombre completp</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_link_to_register">No eres Miembro?Registrese en fire base ahora!</string>
+    <string name="btn_link_to_login">Ya registrado.inicia sesion</string>
+    <string name="title_activity_reset_password">ResetPasswordActivity</string>
+    <string name="btn_forgot_password">olvido su contraseña</string>
+    <string name="btn_reset_password">restablecer contraseña</string>
+    <string name="btn_back"><![CDATA[<< Back]]></string>
+    <string name="hint_new_email">Nuevo Email</string>
+    <string name="btn_change">cambio</string>
+    <string name="btn_send">enviar</string>
+    <string name="btn_remove">Retirar</string>
+    <string name="btn_sign_out">desconectar</string>
+    <string name="lbl_forgot_password">se te olvido tu contraseña?</string>
+    <string name="forgot_password_msg">solo necesitamos su id de correo electronico registgrado para enviarle las instrucciones para restablecer su contraseña.</string>
+</resources>

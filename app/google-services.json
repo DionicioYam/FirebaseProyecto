@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1070185226037",
+    "firebase_url": "https://pragmatic-zoo-242223.firebaseio.com",
+    "project_id": "pragmatic-zoo-242223",
+    "storage_bucket": "pragmatic-zoo-242223.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1070185226037:android:e696f9d6eae115bf",
+        "android_client_info": {
+          "package_name": "com.example.firebaseproyecto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1070185226037-e7vk6e4bhvevorej1jvhduqqd91l9nfe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBR4JvgrUs8fol3p8Sbj5o4zqUX4dNdMO4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1070185226037-e7vk6e4bhvevorej1jvhduqqd91l9nfe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
