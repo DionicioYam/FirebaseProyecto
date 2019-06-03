@@ -1,4 +1,4 @@
 # FirebaseProyecto
-Echo Por Dionicio Yam
+Echo Por Dionicio Yam Y Jesus Haziel 
 Fire Base 
-Se me olvido subirlo antes :"c
+
