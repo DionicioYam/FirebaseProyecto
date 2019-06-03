@@ -1,7 +1,9 @@
 package com.example.firebaseproyecto;
-import android.os.Bundle;
+
+
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
@@ -14,7 +16,6 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class ResetPasswordActivity extends AppCompatActivity {
-
     private EditText inputEmail;
     private Button btnReset, btnBack;
     private FirebaseAuth auth;
@@ -46,7 +47,7 @@ public class ResetPasswordActivity extends AppCompatActivity {
                 String email = inputEmail.getText().toString().trim();
 
                 if (TextUtils.isEmpty(email)) {
-                    Toast.makeText(getApplication(), "Ingrese su id de correo electronico registrada", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplication(), "Introduzca su ID de correo electrónico registrada", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -56,9 +57,9 @@ public class ResetPasswordActivity extends AppCompatActivity {
                             @Override
                             public void onComplete(@NonNull Task<Void> task) {
                                 if (task.isSuccessful()) {
-                                    Toast.makeText(ResetPasswordActivity.this, "te hemos enviado instrucciones para restablecer tu contraseña", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(ResetPasswordActivity.this, "Te hemos enviado introducciones para restablecer tu contraseña.!", Toast.LENGTH_SHORT).show();
                                 } else {
-                                    Toast.makeText(ResetPasswordActivity.this, "error al enviar correo relectronico de restablecimiento", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(ResetPasswordActivity.this, "Error al enviar correo electrónico de restablecimiento", Toast.LENGTH_SHORT).show();
                                 }
 
                                 progressBar.setVisibility(View.GONE);

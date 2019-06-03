@@ -2,7 +2,7 @@
     <string name="app_name">Firebase Auth</string>
     <string name="action_sign_in_short">Registro</string>
     <string name="email">Correo Electronico</string>
-    <string name="minimum_password">Contraseña cortta, introduzca minimo 6 caracteres!</string>
+    <string name="minimum_password">Contraseña corta, introduzca minimo 6 caracteres!</string>
     <string name="auth_failed">Fallo de autenticacion, cheque su email y contraseña o inicie sesion</string>
     <string name="change_email">cambiar email</string>
     <string name="change_password">cambiar contraseña </string>
@@ -15,8 +15,8 @@
     <string name="hint_password">Password</string>
     <string name="hint_name">Nombre completp</string>
     <string name="btn_login">LOGIN</string>
-    <string name="btn_link_to_register">No eres Miembro?Registrese en fire base ahora!</string>
-    <string name="btn_link_to_login">Ya registrado.inicia sesion</string>
+    <string name="btn_link_to_register">No eres Miembro? Registrese en fire base ahora!</string>
+    <string name="btn_link_to_login">Ya registrado. Iniciar sesion</string>
     <string name="title_activity_reset_password">ResetPasswordActivity</string>
     <string name="btn_forgot_password">olvido su contraseña</string>
     <string name="btn_reset_password">restablecer contraseña</string>
@@ -28,4 +28,6 @@
     <string name="btn_sign_out">desconectar</string>
     <string name="lbl_forgot_password">se te olvido tu contraseña?</string>
     <string name="forgot_password_msg">solo necesitamos su id de correo electronico registgrado para enviarle las instrucciones para restablecer su contraseña.</string>
+    <string name="appbar_scrolling_view_behavior">appbar_scrolling_view_behavior</string>
+    <string name="prompt_password">prompt_password</string>
 </resources>

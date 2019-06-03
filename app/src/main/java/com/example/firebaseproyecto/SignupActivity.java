@@ -1,4 +1,6 @@
 package com.example.firebaseproyecto;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -28,7 +30,7 @@ public class SignupActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
-        //Get Firebase auth instance
+
         auth = FirebaseAuth.getInstance();
 
         btnSignIn = (Button) findViewById(R.id.sign_in_button);
@@ -44,11 +46,10 @@ public class SignupActivity extends AppCompatActivity {
                 startActivity(new Intent(SignupActivity.this, ResetPasswordActivity.class));
             }
         });
-
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                startActivity(new Intent(SignupActivity.this, LoginActivity.class));
             }
         });
 
@@ -60,33 +61,32 @@ public class SignupActivity extends AppCompatActivity {
                 String password = inputPassword.getText().toString().trim();
 
                 if (TextUtils.isEmpty(email)) {
-                    Toast.makeText(getApplicationContext(), "Introdusca la direccion de correo electronico", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Introduzca direccion de correo electronico!", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
                 if (TextUtils.isEmpty(password)) {
-                    Toast.makeText(getApplicationContext(), "introdusca la contraseña ", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Introduzca contraseña!", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
                 if (password.length() < 6) {
-                    Toast.makeText(getApplicationContext(), "contraseña demasiado corta, ingrese un minimo de 6 caracteres", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Contraseña demasiado corta, Introduzca 6 caracteres como minimo!", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
                 progressBar.setVisibility(View.VISIBLE);
-                //create user
+
                 auth.createUserWithEmailAndPassword(email, password)
                         .addOnCompleteListener(SignupActivity.this, new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 Toast.makeText(SignupActivity.this, "createUserWithEmail:onComplete:" + task.isSuccessful(), Toast.LENGTH_SHORT).show();
                                 progressBar.setVisibility(View.GONE);
-                                // si falla el inicio de sesion,muestre un mensaje al usuario.si el inicio de sesion tiene exito
-                                // se notificara al oyente del estado de autenticacion y se le asignara logia para manejar
-                                // el usuario con sesion iniciada se puede manejar en el oyente
+
+
                                 if (!task.isSuccessful()) {
-                                    Toast.makeText(SignupActivity.this, "Authentication failed." + task.getException(),
+                                    Toast.makeText(SignupActivity.this, "Autentificacion fallida." + task.getException(),
                                             Toast.LENGTH_SHORT).show();
                                 } else {
                                     startActivity(new Intent(SignupActivity.this, MainActivity.class));
